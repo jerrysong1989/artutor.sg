@@ -5,28 +5,23 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/_public/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/_public/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/_public/css/ie.css" media="screen, projection" />
-	<![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/_public/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/_public/css/form.css" />
-
+	<?PHP include 'include.php'; ?>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	
 </head>
 
 <body>
 
 <div class="container" id="page">
 
+
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<!-- <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div> -->
+		<?PHP include 'header.php' ?>
 	</div><!-- header -->
 
-	<div id="mainmenu">
+<!-- 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
@@ -36,7 +31,8 @@
 				array('label'=>'Logout ('.Yii::app()->user->getState('displayName').')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
-	</div><!-- mainmenu -->
+	</div> -->
+	<!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
@@ -48,8 +44,7 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> ISHU Pte. Ltd<br/>
-		All Rights Reserved.<br/>
+		<?PHP include 'footer.php' ?>
 	</div><!-- footer -->
 
 </div><!-- page -->
