@@ -22,6 +22,9 @@ return array(
 		// uncomment the following to enable the Gii tool
 
 		'gii'=>array(
+            'generatorPaths'=>array(
+                'bootstrap.gii',
+            ),
 			'class'=>'system.gii.GiiModule',
 			'password'=>'ishu',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
@@ -75,6 +78,9 @@ return array(
 				*/
 			),
 		),
+        'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+        ),
 	),
 
 	// application-level parameters that can be accessed
@@ -83,4 +89,7 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+
+    // bootstrap extension
+    'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
 );
