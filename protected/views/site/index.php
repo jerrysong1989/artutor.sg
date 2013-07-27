@@ -67,7 +67,7 @@ $this->pageTitle=Yii::app()->name;
 			<div class="hp-topselectband-toptext">Have a skill to share?
 			</div>
 			<div class="btn-group">
-				<a href="tutor-registration-s1.php" class="btn hp-topselectband-btn" id="hp-topselectband-btn-search-become" type="button">Become a tutor</a>
+				<a href="site/page?view=tutor-registration-s1" class="btn hp-topselectband-btn" id="hp-topselectband-btn-search-become" type="button">Become a tutor</a>
 				<a class="btn btn-warning hp-topselectband-btn-free" type="button">FREE</a>
 			</div>
 
