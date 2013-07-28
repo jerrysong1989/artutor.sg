@@ -18,6 +18,7 @@
 		------------------------------OR------------------------------
 		<a href="#" class="btn btn-large " id="createAccount" style="width: 90%;" data-toggle="modal">Create New Account</a><br>
 		<div id="hp-signup">
+			
 			<form class="form-horizontal">
 				<input type="text" placeholder="Name">
 				<input type="text" placeholder="Email Address">
@@ -78,8 +79,6 @@
 	  $( "#hp-signup" ).css( "display", "none");
       $( "#createAccount" ).css( "display", "block");
 	})
-
-
 
 	
 	// for soical plug-ins
