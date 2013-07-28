@@ -3,9 +3,6 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<<<<<<< HEAD
-<h1>Coming Soon...</h1>
-=======
 <div id="hp-top">
 
 	<div id="hp-title">
@@ -125,41 +122,39 @@ $this->pageTitle=Yii::app()->name;
 </div>
 
 <script>
+    // register modal manipulation: when press login the form will auto pop up
+    $( "#createAccount" ).click(function(){
+        $('#hp-signup').slideDown('slow', function() {});
+        $( "#createAccount" ).css( "display", "none");
+    });
 
-		// register modal manipulation: when press login the form will auto pop up
-		$( "#createAccount" ).click(function(){
-			$('#hp-signup').slideDown('slow', function() {});
-			$( "#createAccount" ).css( "display", "none");
-		});
-
-		$('#signup-modal').on('hidden', function () {
-			$( "#hp-signup" ).css( "display", "none");
-			$( "#createAccount" ).css( "display", "block");
-		});
-
+    $('#signup-modal').on('hidden', function () {
+        $( "#hp-signup" ).css( "display", "none");
+        $( "#createAccount" ).css( "display", "block");
+    });
 
 
-		// when press a top-icon it will get rest to disappear
-		$( ".hp-topicon").click(function(){
-			// $('#hp-topicon-instrument').css( "display", "none");
-			// $('#hp-topicon-dancing').css( "display", "none");
-			// $('#hp-topicon-others').css( "display", "none");
-			$('#hp-topicon-wrapper>a').not("#this.id").css( "opacity", "0.2");
-			$(this).css( "opacity", "1");
-			$(this).animate({left:'',top:'-60px'}, 700, function() {
-			    // Animation complete.
-    			$('#hp-searchbar').fadeIn('slow', function() {});
-    			$('#hp-topselectband-wrapper').css( "display", "none");
-			  });
 
-		});
+    // when press a top-icon it will get rest to disappear
+    $( ".hp-topicon").click(function(){
+        // $('#hp-topicon-instrument').css( "display", "none");
+        // $('#hp-topicon-dancing').css( "display", "none");
+        // $('#hp-topicon-others').css( "display", "none");
+        $('#hp-topicon-wrapper>a').not("#this.id").css( "opacity", "0.2");
+        $(this).css( "opacity", "1");
+        $(this).animate({left:'',top:'-60px'}, 700, function() {
+            // Animation complete.
+            $('#hp-searchbar').fadeIn('slow', function() {});
+            $('#hp-topselectband-wrapper').css( "display", "none");
+          });
+
+    });
 
 
-		// the action for the 3 bottons at the btm band
-		$( "#hp-topselectband-btn-search").click(function(){
-			$('#hp-searchbar').fadeIn('slow', function() {});
-			$('#hp-searchbar-subject').css( "display", "inline");
-			$( ".hp-topicon").css( "opacity", "0.2");
-		});
-	</script>
->>>>>>> 0d0ebe10443fb29c4c2ba365a8d36399c9836a0b
+    // the action for the 3 bottons at the btm band
+    $( "#hp-topselectband-btn-search").click(function(){
+        $('#hp-searchbar').fadeIn('slow', function() {});
+        $('#hp-searchbar-subject').css( "display", "inline");
+        $( ".hp-topicon").css( "opacity", "0.2");
+    });
+</script>

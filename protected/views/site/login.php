@@ -9,14 +9,6 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<<<<<<< HEAD
-
-<h1>Login</h1>
-
-<p>Please fill out the following form with your login credentials:</p>
-=======
->>>>>>> 0d0ebe10443fb29c4c2ba365a8d36399c9836a0b
-
 <div class="form">
 	<?php $form=$this->beginWidget('CActiveForm', array(
 		'id'=>'login-form',
@@ -54,9 +46,3 @@ $this->breadcrumbs=array(
 		</div>
 
 <?php $this->endWidget(); ?>
-<<<<<<< HEAD
-</div><!-- form -->
-=======
-
-</div><!-- form -->
->>>>>>> 0d0ebe10443fb29c4c2ba365a8d36399c9836a0b
