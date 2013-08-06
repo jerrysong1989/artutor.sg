@@ -1,7 +1,7 @@
 ISHU Pte. Ltd.
 Project Artutor.sg
 
-==================================Genearl Information==================================
+============================Genearl Information============================
 Author:  HU Ze, TAN Chen, SONG Chonggang
 Current Version: 1.0
 Date: July  2013 - 
@@ -11,18 +11,25 @@ Timeline:
 	October:
 	2014: Expansion and 2nd Project
 
-=======================================File System=====================================
+================================File System===============================
 
 _lib: library files, wont be changed
+	
 	bootstrap: bootstrap related files (obsolete later)
+	
 	bootstrap-others: other bootstrap files
+	
 	font-awersomeL icons
+	
 	jasny: for date-picker and file upload
 
 
 _publc:
+	
 	css: 
+	
 	font:
+	
 	images:
 
 assets: temp files, auto-generated
