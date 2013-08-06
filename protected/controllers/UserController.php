@@ -98,7 +98,8 @@ class UserController extends Controller
                 $this->redirect(array('view','id'=>$model->id));
         }
 
-        $this->render('create',array(
+        $this->layout = '//layouts/main';
+        $this->render('register',array(
             'model'=>$model,
         ));
     }
