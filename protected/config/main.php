@@ -7,9 +7,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Artutor.sg',
-    // bootstrap extension
-    'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
+	'name'=>'artutor.sg',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -91,4 +89,7 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+
+    // bootstrap extension
+    'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
 );
