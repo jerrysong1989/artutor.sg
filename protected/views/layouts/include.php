@@ -1,3 +1,6 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+
 <!-- blueprint CSS framework -->
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/_public/css/screen.css" media="screen, projection" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/_public/css/print.css" media="print" />
@@ -13,7 +16,7 @@
 
 <!-- Script -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/_lib/bootstrap/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/_lib/jasny/bootstrap-datepicker.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/_lib/jasny/bootstrap-fileupload.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/_lib/bootstrap-others/bootstrap-select.min.js"></script>

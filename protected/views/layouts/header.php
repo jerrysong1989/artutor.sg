@@ -1,14 +1,14 @@
-<div id="fb-root"></div>
+	<div id="fb-root"></div>
 
-<div id="hp-headerbar">
+	<div id="hp-headerbar">
 	<div class="login-btn" data-toggle="modal" href="#login-modal">Log In</div>
 	<div class="signup-btn" data-toggle="modal" href="#signup-modal">Sign Up</div>
- 	<!-- <button class="btn btn-success pull-right" type="button" value="Register" >Register</button> -->
-</div>
+		<!-- <button class="btn btn-success pull-right" type="button" value="Register" >Register</button> -->
+	</div>
 
-<div class="clear"></div>
+	<div class="clear"></div>
 
-<div id="signup-modal" class="modal hide fade">
+	<div id="signup-modal" class="modal hide fade">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		<h3>Sign Up</h3>
@@ -36,9 +36,10 @@
 	<div class="modal-footer">
 		<p>Already an Artutor member? <span style="color:#f89928">Log in</span></p>
 	</div>
-</div>
+	</div>
 
-<div id="login-modal" class="modal hide fade">
+
+	<div id="login-modal" class="modal hide fade">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		<h3>Log In</h3>
@@ -61,26 +62,27 @@
 	<div class="modal-footer">
 		<p>Don't have an account? <span style="color:#f89928">Sign up</span></p>
 	</div>
-</div>
+	</div>
 
 
-<script>
-  $(function() {
-    $( "#createAccount" ).click(function(){
-      $('#hp-signup').slideDown('slow', function() {
+	<script>
+	$(function() {
+	$( "#createAccount" ).click(function(){
+	  $('#hp-signup').slideDown('slow', function() {
 		  // 
 	  });
 	      $( "#createAccount" ).css( "display", "none");
-      return false;
-    });
-  });
+	  return false;
+	});
+	});
 
-  $('#signup-modal').on('hidden', function () {
+
+	$('#signup-modal').on('hidden', function () {
 	  $( "#hp-signup" ).css( "display", "none");
-      $( "#createAccount" ).css( "display", "block");
+	  $( "#createAccount" ).css( "display", "block");
 	})
 
-	
+
 	// for soical plug-ins
 	(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -94,4 +96,4 @@
 				
 
 
-  </script>
+	</script>
