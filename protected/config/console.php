@@ -12,15 +12,13 @@ return array(
 	// application components
 	'components'=>array(
 		// uncomment the following to use a MySQL database
-		/*
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=127.0.0.1:8889;dbname=test',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'root',
 			'charset' => 'utf8',
 		),
-		*/
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(

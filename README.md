@@ -2,10 +2,15 @@ ISHU Pte. Ltd.
 Project Artutor.sg
 
 ============================Genearl Information============================
+
 Author:  HU Ze, TAN Chen, SONG Chonggang
+
 Current Version: 1.0
+
 Date: July  2013 - 
+
 Timeline: 
+
 	August: launch
 	September: iteration and additional feature
 	October:
